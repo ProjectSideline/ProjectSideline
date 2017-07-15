@@ -1,0 +1,22 @@
+If you are confused about the git flow we are trying to use this is the place to be.
+
+When working on a new FEATURE
+  1) make a new branch from dev branch. git checkout -b <name your branch>
+
+
+
+Merging dev into your branch
+  1) This will allow you to have the most recent changes from the dev branch.
+  2) git checkout dev
+  3) git pull
+  4) git checkout <your branch>
+  5) git merge dev
+
+
+
+Merging your branch into dev
+  1) once your feature branch is working and you think its ready for dev
+  2) before merging your code into dev you must have the most up to date version of dev
+  3) git checkout dev
+  4) git pull
+  4) git merge --squash --commit <your branch name>
