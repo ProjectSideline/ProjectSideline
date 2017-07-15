@@ -1,0 +1,29 @@
+{
+  "name": "projectsideline",
+  "version": "1.0.0",
+  "description": "An App to assist coaches",
+  "main": "index.js",
+  "directories": {
+    "doc": "docs"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ProjectSideline/ProjectSideline.git"
+  },
+  "author": "N.Sonhouse, M.Mensah, I. Maynard",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/ProjectSideline/ProjectSideline/issues"
+  },
+  "homepage": "https://github.com/ProjectSideline/ProjectSideline#readme",
+  "dependencies": {
+    "express": "^4.15.3",
+    "mocha": "^3.4.2",
+    "mongodb": "^2.2.30",
+    "mongoose": "^4.11.3",
+    "nightmare": "^2.10.0"
+  }
+}
