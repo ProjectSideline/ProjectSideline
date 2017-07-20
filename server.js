@@ -12,11 +12,13 @@ var Family = require("./models/family.js");
 var Coaches = require("./models/coaches.js");
 var Events = require("./models/events.js");
 
-var app = express(); // Init & config  express 
+// Init & config  express 
+var app = express(); 
 app.use(logger("dev:"));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static("public"));
 
+// Mongoose 
 mongoose.connect("mongod://localhost/sideline");
 var db = mongoose.connection;
 db.on("error", function(error) {
@@ -26,6 +28,8 @@ db.on("error", function(error) {
 db.once("open",function() {
     console.log("Mongoose Connection Successful.")
 });
+
+
 
 // Routes 
 
@@ -66,6 +70,7 @@ db.once("open",function() {
 
         
         // Listen on Port 3000
+
 app.listen(8075, function() {
   console.log("App running on port 8075!");
 });
