@@ -1,6 +1,5 @@
 // Project Sideline 
 
-
 // Dependencies
 var express = require("express");
 var bodyParser = require("body-parser");
@@ -16,7 +15,7 @@ var Events = require("./models/events.js");
 var app = express(); 
 app.use(logger("dev:"));
 app.use(bodyParser.urlencoded({extended: false}));
-app.use(express.static("public"));
+app.use(express.static("public")); // Public Dir
 
 // Mongoose 
 mongoose.connect("mongod://localhost/sideline");
