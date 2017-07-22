@@ -1,11 +1,9 @@
-// Project Sideline 
 
 // Dependencies
 var express = require("express");
 var bodyParser = require("body-parser");
 var logger = require("morgan");
 var mongoose = require("mongoose");
-
 // Models 
 // var Family = require("./models/family.js");
 // var Coaches = require("./models/coaches.js");
@@ -84,3 +82,4 @@ app.use(express.static("public")); // Public Dir
 app.listen(8075, function() {
   console.log("App running on port 8075!");
 });
+
