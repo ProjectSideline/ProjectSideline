@@ -8,6 +8,7 @@ var Contact = new Schema({
         add1        : { type: String, required : true },
         add2        : { type: String, required : true },
         city        : { type: String, required : true },
+        state       : { type: Number, required : true },
         zip         : { type: Number, required : true },
         email       : { type: String},
         cUrl        : { type: String},
