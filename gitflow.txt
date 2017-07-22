@@ -11,8 +11,7 @@ Merging dev into your branch
   3) git pull
   4) git checkout <your branch>
   5) git merge dev
-
-
+  
 
 Merging your branch into dev
   1) once your feature branch is working and you think its ready for dev
@@ -20,3 +19,5 @@ Merging your branch into dev
   3) git checkout dev
   4) git pull
   4) git merge --squash --commit <your branch name>
+  5) git push
+
