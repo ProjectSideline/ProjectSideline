@@ -9,6 +9,5 @@ var Event = new Schema({
 }); 
 
 var Event = mongoose.model("Events", Event);
-
 // Export the model
 module.exports = Event;
