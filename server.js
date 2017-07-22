@@ -1,11 +1,9 @@
-// Project Sideline 
 
 // Dependencies
 var express = require("express");
 var bodyParser = require("body-parser");
 var logger = require("morgan");
 var mongoose = require("mongoose");
-
 // Models 
 // var Family = require("./models/events.js");
 // var Coaches = require("./models/coaches.js");
@@ -18,7 +16,8 @@ app.use(logger("dev:"));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static("public")); // Public Dir
 
-Mongoose 
+//Mongoose 
+
 mongoose.connect("mongod://localhost/sideline");
 var db = mongoose.connection;
 db.on("error", function(error) {
@@ -98,6 +97,7 @@ db.once("open",function() {
          });  // teams get routes   
         
         // Listen on Port 3000
+
 
 app.listen(3000, function() {
   console.log("App running on port 3000!");
