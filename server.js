@@ -4,6 +4,7 @@ var express = require("express");
 var bodyParser = require("body-parser");
 var logger = require("morgan");
 var mongoose = require("mongoose");
+
 // Models 
 // var Family = require("./models/events.js");
 // var Coaches = require("./models/coaches.js");
@@ -17,7 +18,6 @@ app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static("public")); // Public Dir
 
 //Mongoose 
-
 mongoose.connect("mongod://localhost/sideline");
 var db = mongoose.connection;
 db.on("error", function(error) {
@@ -30,7 +30,6 @@ db.once("open",function() {
 
 
 // Routes 
-
  app.get("/", function(req,res) {
             console.log("WELCOME TO THE THUNDERDOME!");
             res.send("WELCOME TO THE THUNDERDOME!");
