@@ -4,27 +4,28 @@ var Schema = mongoose.Schema;
 
 // Create Player schema
 
-var Contact = new Schema({
-        name        : String,required,
-        phone1      : String,required,
-        phone2      : String,required,
-        add1        : String,required,
-        add2        : String,required,
-        city        : String,required,
-        zip         : Number,required,
-        Note        : String,required 
-    });
+// var Contact = new Schema({
+//         name        : { type: String, required : true },
+//         add1        : { type: String, required : true },
+//         add2        : { type: String, required : true },
+//         city        : { type: String, required : true },
+//         zip         : { type: Number, required : true },
+//         phone1      : { type: Number, required : true },
+//         phone2      : { type: String, required : true },
+//         Note        : { type: String}
+//     });
+
 
 var Player = new Schema({
-        name        :String, required,
-        numbr       :String, required,
-        snaps       :Number,
-        info        :Contact
+        name        :{ type: String, required : true },
+        numbr       :{ type: String, required : true },
+        snaps       :{ type: Number, required : true },
+        info        :{ type: Contact.schema}
 }); 
+
 
 var Player  = mongoose.model("Player", PlayerSchema);
 var Contact = mongoose.model("Contact", ContactSchema);
 
 // Export the model
 module.exports = Player;
-module.exports = Contact; 

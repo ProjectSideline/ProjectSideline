@@ -7,7 +7,7 @@ var logger = require("morgan");
 var mongoose = require("mongoose");
 
 // Models 
-// var Family = require("./models/family.js");
+// var Family = require("./models/events.js");
 // var Coaches = require("./models/coaches.js");
 // var Events = require("./models/events.js");
 // var Teams = require("./models/teams.js");
@@ -18,15 +18,15 @@ app.use(logger("dev:"));
 app.use(bodyParser.urlencoded({extended: false}));
 app.use(express.static("public")); // Public Dir
 
-// Mongoose 
-// mongoose.connect("mongod://localhost/sideline");
-// var db = mongoose.connection;
-// db.on("error", function(error) {
-//     console.log("mongoose Error: ",error);
-// });
-// db.once("open",function() {
-//     console.log("Mongoose Connection Successful.")
-// });
+Mongoose 
+mongoose.connect("mongod://localhost/sideline");
+var db = mongoose.connection;
+db.on("error", function(error) {
+    console.log("mongoose Error: ",error);
+});
+db.once("open",function() {
+    console.log("Mongoose Connection Successful.")
+});
 
 
 
@@ -66,12 +66,12 @@ app.use(express.static("public")); // Public Dir
             //             res.send(error);
             //         } // On Family error 
             //         else {
-            //             res.send(doc);
+            //             res.send(doc);   
             //         }
             // }); // Find 
         });  // Coaches get routes   
 
-        app.get("/events",function(req,res) {
+        app.get("/game",function(req,res) {
             console.log("What's happening!");
             res.send("What's happening!");
             // Events.find({}, function(error, doc){
