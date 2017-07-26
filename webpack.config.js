@@ -18,7 +18,7 @@ module.exports = {
                 }
 
             }
-        ]
+        ],
     },
     //allows debugging in react in chrome. Without it, all errors will say they are coming from bundle.js
     devtool: 'eval-source-map'
