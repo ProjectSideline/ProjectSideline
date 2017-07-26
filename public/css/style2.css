@@ -1,0 +1,17 @@
+
+nav {background:darkgreen;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #DCE35B, darkgreen);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #DCE35B, darkgreen); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+} 
+
+img {
+    border: solid black 2px;
+    border-radius:50%;
+    display: inline-block;
+    position: relative;
+}
+
+*{
+    -webkit-transiton: all .125s ease-in-out;
+}
+
