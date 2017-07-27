@@ -1,22 +1,40 @@
 // Requirements mongoose
 var mongoose = require("mongoose");
 var Schema = mongoose.Schema;
-var Contact = require("./contact.js")
+require("./contact.js");
 
 // Create Player schema
 
-var Player  = mongoose.model("Player", PlayerSchema);
-var Contact = mongoose.model("Contact", ContactSchema);
+// var Contact = mongoose.model("Contact", ContactSchema);
+var Contact = new Schema({
+        coName      : { type: String, required : true },
+        add1        : { type: String, required : true },
+        add2        : { type: String, required : true },
+        city        : { type: String, required : true },
+        state       : { type: Number, required : true },
+        zip         : { type: Number, required : true },
+        email       : { type: String},
+        cUrl        : { type: String},
+        phone1      : { type: Number, required : true },
+        phone2      : { type: String, required : true },
+        Note        : { type: String}
+    });
+
+
 
 var Player = new Schema({
         fname       :{ type: String, required : true,},
         lname       :{ type: String, required : true},
         dateOfbirth :{ type: Date, required : true },
         jerseyNumbr :{ type: String, required : true, unique:true},
-        starter 	:{ type: Boolean, required: true},
+        starter     :{ type: Boolean, required: true},
         snaps       :{ type: Number, required : true},
-        info        :{ type: Contact.schema}
+        info        :{ type: Contact}
 }); 
 
 // Export the model
+var PlayerSchema = Player;
+var Player  = mongoose.model("Player", Player);
+
+module.exports = PlayerSchema;
 module.exports = Player;
