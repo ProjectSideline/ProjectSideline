@@ -18,4 +18,5 @@ var Contact = new Schema({
     });
 
 // Export the model
+
 module.exports = Contact;
