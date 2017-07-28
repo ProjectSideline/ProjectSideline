@@ -52,8 +52,8 @@ nav {
 
 .icons {
   /* justify-content: space-between; */
-  display: flex;
-  font-size: 10px;
+  display: "flex-container";
+  font-size: 5px;
   
 
 

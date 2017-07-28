@@ -159,3 +159,11 @@ body.welcome {
     opacity: 0;
   }
 }
+
+/*Modal Shizz  */
+.modal {
+  width: 75% !important;
+  max-height: 100%;
+  overflow-y: hidden !important;
+  
+}
