@@ -1,4 +1,3 @@
-
 // Dependencies
 var express = require("express");
 var bodyParser = require("body-parser");
@@ -10,11 +9,13 @@ var Player = require("./models/player.js");
 var Events = require("./models/events.js");
 var Teams = require("./models/teams.js");
 
-// Init & config  express 
+// Init & config express 
 var app = express(); 
 app.use(logger("dev:"));
-app.use(bodyParser.urlencoded({extended: false}));
-app.use(express.static("public")); // Public Dir
+app.use(bodyParser.urlencoded({extended: true }));
+app.use(bodyParser.text());
+app.use(bodyParser.json({ type: "application/vnd.api+json" }));
+app.use(express.static("./public")); // Public Dir
 
 //Mongoose 
 mongoose.connect("mongodb://localhost/sideline");
@@ -49,7 +50,7 @@ db.once("open",function() {
             //         if (error){
             //             res.send(error);
             //         } // On Family error 
-            //         else {
+            //         else {cd ..
             //             res.send(doc);
             //         }
             // }); // Find 

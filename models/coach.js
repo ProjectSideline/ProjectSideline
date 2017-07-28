@@ -12,7 +12,7 @@ var Player = new Schema({
         jerseyNumbr :{ type: String, required : true, unique:true},
         starter     :{ type: Boolean, required: true},
         snaps       :{ type: Number, required : true},
-        info        :{ type: Contact.schema}
+        info        :{ type: Contact}
 }); 
 
 var Coach = new Schema({
@@ -26,6 +26,6 @@ var Coach = new Schema({
 
 
 // Create the coach model with the coach schema
-var Coach = mongoose.model("Coach", CoachSchema);
+var Coach = mongoose.model("Coach", Coach);
 // Export the user model
 module.exports = Coach;
