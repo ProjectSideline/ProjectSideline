@@ -18,5 +18,5 @@ Merging your branch into dev
   2) before merging your code into dev you must have the most up to date version of dev
   3) git checkout dev
   4) git pull
-  4) git merge --no ff--commit <your branch name>
+  4) git merge --no-ff your branch name>
   5) git push
