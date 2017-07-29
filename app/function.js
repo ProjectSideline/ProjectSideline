@@ -1,4 +1,17 @@
 
+<<<<<<< HEAD
+$(document).ready(function(){
+  //for modal function
+  $('.modal').modal();
+
+  //home page animation
+
+  //routes for snap list
+  
+  
+});
+
+=======
 //     $(document).ready(function(){
 //       $('.parallax').parallax();
 //     });
@@ -22,3 +35,4 @@
 $(document).ready(function(){
   $('.modal-trigger').leanModal();
 });
+>>>>>>> main/dev
