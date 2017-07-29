@@ -1,3 +1,33 @@
+<<<<<<< HEAD
+=======
+/*  */
+/* 
+body {
+    background-color: whitesmoke;
+}
+.page-footer {
+    background-color: darkslategray;
+}
+
+.parallax-container {
+      height: 550px;
+    }
+.nav-wrapper {
+background: #134E5E;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to right, #274032, green);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to right, #274032, green); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+/*border-width:2px;
+border-style: solid, #326771;
+
+}
+
+#outer {
+    width: 100%;
+    height: 100%;
+    background-color:#C2C9E3;
+    padding-bottom: 50px;
+} */
+>>>>>>> main/dev
 
 body {
   display: flex;
@@ -41,7 +71,11 @@ body.welcome {
 }
 
 .welcome #welcome {
+<<<<<<< HEAD
   background: darkgreen ; 
+=======
+  background: darkgreen ;
+>>>>>>> main/dev
   width: 56px;
   height: 56px;
   position: absolute;
@@ -59,7 +93,10 @@ body.welcome {
 .welcome a.btn {
   opacity: 0;
   animation: moveIn 2s 3.1s ease forwards;
+<<<<<<< HEAD
 
+=======
+>>>>>>> main/dev
 }
 
 @keyframes init {
@@ -111,9 +148,13 @@ body.welcome {
 
 @keyframes moveUp {
   0% {
+<<<<<<< HEAD
     /* background: #311b92; */
       background-image: url("../img/football.png");
 
+=======
+    background: #311b92;
+>>>>>>> main/dev
     top: 100%;
   }
   50% {
@@ -158,6 +199,7 @@ body.welcome {
   100% {
     opacity: 0;
   }
+<<<<<<< HEAD
 }
 
 /*Modal Shizz  */
@@ -166,4 +208,6 @@ body.welcome {
   max-height: 100%;
   overflow-y: hidden !important;
   
+=======
+>>>>>>> main/dev
 }
