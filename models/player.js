@@ -20,16 +20,16 @@ var Contact = new Schema({
         Note        : { type: String}
     });
 
-
-
 var Player = new Schema({
+        coName      : { type: String, required : true },   
+        phone1      : { type: Number, required : true },     
         fname       :{ type: String, required : true,},
         lname       :{ type: String, required : true},
         dateOfbirth :{ type: Date, required : true },
         jerseyNumbr :{ type: String, required : true, unique:true},
         starter     :{ type: Boolean, required: true},
+        present     :{ type: Boolean, required: true},
         snaps       :{ type: Number, required : true},
-        info        :{ type: Contact}
 }); 
 
 // Export the model
