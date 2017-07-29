@@ -1,35 +1,8 @@
-<<<<<<< HEAD
-
-=======
->>>>>>> main/dev
 // Dependencies
 var express = require("express");
 var bodyParser = require("body-parser");
 var logger = require("morgan");
 var mongoose = require("mongoose");
-<<<<<<< HEAD
-// Models 
-// var Family = require("./models/family.js");
-// var Coaches = require("./models/coaches.js");
-// var Events = require("./models/events.js");
-// var Teams = require("./models/teams.js");
-
-// Init & config  express 
-var app = express(); 
-app.use(logger("dev:"));
-app.use(bodyParser.urlencoded({extended: false}));
-app.use(express.static("public")); // Public Dir
-
-// Mongoose 
-// mongoose.connect("mongod://localhost/sideline");
-// var db = mongoose.connection;
-// db.on("error", function(error) {
-//     console.log("mongoose Error: ",error);
-// });
-// db.once("open",function() {
-//     console.log("Mongoose Connection Successful.")
-// });
-=======
 
 // Models 
 var Player = require("./models/player.js");
@@ -53,15 +26,10 @@ db.on("error", function(error) {
 db.once("open",function() {
     console.log("Mongoose Connection Successful.")
 });
->>>>>>> main/dev
 
 
 
 // Routes 
-<<<<<<< HEAD
-        app.get("/family",function(req,res) {
-            console.log("We are Family!");
-=======
  app.get("/", function(req,res) {
             console.log("WELCOME TO THE THUNDERDOME!");
             res.send("WELCOME TO THE THUNDERDOME!");
@@ -78,16 +46,11 @@ db.once("open",function() {
         app.get("/family",function(req,res) {
             console.log("We are Family!");
             res.send("We are Family!");
->>>>>>> main/dev
             // Family.find({}, function(error, doc){
             //         if (error){
             //             res.send(error);
             //         } // On Family error 
-<<<<<<< HEAD
             //         else {
-=======
-            //         else {cd ..
->>>>>>> main/dev
             //             res.send(doc);
             //         }
             // }); // Find 
@@ -95,32 +58,20 @@ db.once("open",function() {
 
          app.get("/coaches",function(req,res) {
              console.log("Life is a game of inches!");
-<<<<<<< HEAD
-=======
              res.send("Life is a game of inches!");
->>>>>>> main/dev
             // Coaches.find({}, function(error, doc){
             //         if (error){
             //             res.send(error);
             //         } // On Family error 
             //         else {
-<<<<<<< HEAD
-            //             res.send(doc);
-=======
             //             res.send(doc);   
->>>>>>> main/dev
             //         }
             // }); // Find 
         });  // Coaches get routes   
 
-<<<<<<< HEAD
-        app.get("/events",function(req,res) {
-            console.log("What's happening!");
-=======
         app.get("/game",function(req,res) {
             console.log("What's happening!");
             res.send("What's happening!");
->>>>>>> main/dev
             // Events.find({}, function(error, doc){
             //                 if (error){
             //                     res.send(error);
@@ -133,10 +84,7 @@ db.once("open",function() {
         
         app.get("/teams",function(req,res) {
             console.log("There is no i in team!");
-<<<<<<< HEAD
-=======
             res.send("There is no i in team!");
->>>>>>> main/dev
             // Teams.find({}, function(error, doc){
             //                 if (error){
             //                     res.send(error);
@@ -149,14 +97,7 @@ db.once("open",function() {
         
         // Listen on Port 3000
 
-<<<<<<< HEAD
-app.listen(8075, function() {
-  console.log("App running on port 8075!");
-});
-
-=======
 
 app.listen(3000, function() {
   console.log("App running on port 3000!");
 });
->>>>>>> main/dev
