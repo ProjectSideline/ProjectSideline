@@ -13,7 +13,6 @@ Merging dev into your branch
   3) git pull
   4) git checkout <your branch>
   5) git merge dev
-  
 
 Merging your branch into dev
 

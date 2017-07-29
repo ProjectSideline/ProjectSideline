@@ -50,7 +50,7 @@ db.once("open",function() {
             //         if (error){
             //             res.send(error);
             //         } // On Family error 
-            //         else {cd ..
+            //         else {
             //             res.send(doc);
             //         }
             // }); // Find 
