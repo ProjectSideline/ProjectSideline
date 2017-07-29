@@ -1,33 +1,3 @@
-<<<<<<< HEAD
-=======
-/*  */
-/* 
-body {
-    background-color: whitesmoke;
-}
-.page-footer {
-    background-color: darkslategray;
-}
-
-.parallax-container {
-      height: 550px;
-    }
-.nav-wrapper {
-background: #134E5E;  /* fallback for old browsers */
-background: -webkit-linear-gradient(to right, #274032, green);  /* Chrome 10-25, Safari 5.1-6 */
-background: linear-gradient(to right, #274032, green); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
-/*border-width:2px;
-border-style: solid, #326771;
-
-}
-
-#outer {
-    width: 100%;
-    height: 100%;
-    background-color:#C2C9E3;
-    padding-bottom: 50px;
-} */
->>>>>>> main/dev
 
 body {
   display: flex;
@@ -71,11 +41,7 @@ body.welcome {
 }
 
 .welcome #welcome {
-<<<<<<< HEAD
   background: darkgreen ; 
-=======
-  background: darkgreen ;
->>>>>>> main/dev
   width: 56px;
   height: 56px;
   position: absolute;
@@ -93,10 +59,6 @@ body.welcome {
 .welcome a.btn {
   opacity: 0;
   animation: moveIn 2s 3.1s ease forwards;
-<<<<<<< HEAD
-
-=======
->>>>>>> main/dev
 }
 
 @keyframes init {
@@ -148,13 +110,9 @@ body.welcome {
 
 @keyframes moveUp {
   0% {
-<<<<<<< HEAD
     /* background: #311b92; */
       background-image: url("../img/football.png");
 
-=======
-    background: #311b92;
->>>>>>> main/dev
     top: 100%;
   }
   50% {
@@ -199,15 +157,398 @@ body.welcome {
   100% {
     opacity: 0;
   }
-<<<<<<< HEAD
 }
 
-/*Modal Shizz  */
-.modal {
+/*Modal Shizz  */.modal {
   width: 75% !important;
   max-height: 100%;
-  overflow-y: hidden !important;
   
-=======
->>>>>>> main/dev
+} 
+
+.modal {
+  background: #e9e9e9;
+  color: #666666;
+  font-family: 'Forum', 'RobotoDraft', 'Roboto', sans-serif;
+  font-size: 14px;
+   width: 75% !important;
+  max-height: 100%;
+  overflow-y: hidden !important;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Container */
+.card-container {
+  position: relative;
+  font-family: 'Forum', 'RobotoDraft', 'Roboto', sans-serif;
+  max-width: 380px;
+  max-height: 500px;
+  height: 100%;
+  width: 100%;
+  margin: 10% auto;
+}
+
+/* Toggle */
+.toggle {
+  z-index: 10;
+  cursor: pointer;
+  position: absolute;
+  top: 5;
+  right: -0;
+  background: #2E538E;
+  border-radius: 0 5px;
+  width: 40px;
+  height: 40px;
+  margin: -5px 0 0;
+  color: #ffffff;
+  font-size: 12px;
+  line-height: 30px;
+  text-align: center;
+}
+
+.toggle .tooltip {
+  font-family: inherit;
+  text-align: center;
+  position: absolute;
+  top: 4px;
+  left: 50px;
+  right: -70px;
+  display: block;
+  background: rgba(0, 0, 0, 0.5);
+  border-radius: 3px;
+  width: auto;
+  padding: 8px 6px;
+  font-size: 12px;
+  text-transform: uppercase;
+  opacity: 0;
+   -webkit-transition: .5s ease;
+  -moz-transition: .5s ease;
+  -o-transition: .5s ease;
+  transition: .5s ease;
+}
+
+.toggle:hover .tooltip {
+  opacity: 1;
+}
+
+.toggle i {
+  position: relative;
+  top: 14px;
+}
+.toggle .tooltip:before {
+  content: '';
+  position: absolute;
+  top: 11px;
+  left: -5px;
+  display: block;
+  border-top: 5px solid transparent;
+  border-bottom: 5px solid transparent;
+  border-right: 5px solid rgba(0, 0, 0, 0.5);
+}
+
+/* Card */
+.card {
+  position: relative;
+  background: #ffffff;
+  border-radius: 5px;
+  padding: 40px 0 20px 0;
+  box-sizing: border-box;
+  box-shadow: 1px 2px 3px rgba(0, 0, 0, 0.12), 2px 2px 10px rgba(0, 0, 0, 0.24);
+}
+
+.card {
+  display: none;
+}
+
+.card:nth-child(2) {
+  display: block;
+}
+
+.card .title {
+  position: relative;
+  z-index: 1;
+  border-left: 5px solid #2E538E;
+  margin: 0 0 25px;
+  padding: 10px 0 10px 40px;
+  color: #2E538E;
+  font-size: 31px;
+  font-weight: 600;
+  text-transform: uppercase;
+}
+
+.card .input-container {
+  position: relative;
+  margin: 0 50px 35px;
+}
+
+.card .input-container input {
+  outline: none;
+  z-index: 1;
+  position: relative;
+  background: none;
+  width: 100%;
+  height: 45px;
+  border: 0;
+  color: #212121;
+  font-size: 25px;
+  font-weight: 600;
+}
+
+#Username, #E-mail {
+  font-family: inherit;
+  font-size: 19px;
+}
+
+.card .input-container label.active {
+  color: #9d9d9d;
+  -webkit-transform: translate(-12%, -50%) scale(0.75);
+  -moz-transform: translate(-12%, -50%) scale(0.75);
+  -o-transform: translate(-12%, -50%) scale(0.75);
+  -ms-transform: translate(-12%, -50%) scale(0.75);
+  transform: translate(-12%, -50%) scale(0.75);
+}
+
+div.check {
+  font-size: 15px;
+}
+.card .input-container label {
+  position: absolute;
+  top: 0;
+  left: 0;
+  color: #6F96D3;
+  font-size: 22px;
+  font-weight: 300;
+  line-height: 58px;
+  -webkit-transition: .3s ease;
+  -moz-transition: .3s ease;
+  -o-transition: .3s ease;
+  -ms-transition: .3s ease;
+  transition: .3s ease;
+}
+
+/* Bar */
+.card .input-container input:focus ~ .bar:before, .card .input-container input:focus ~ .bar:after {
+  width: 50%; 
+}
+
+.card .input-container .bar {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background: #757575;
+  width: 100%;
+  height: 1px;
+}
+
+.card .input-container .bar:before, .card .input-container .bar:after {
+  content: '';
+  position: absolute;
+  background: #2E538E;
+  width: 0;
+  height: 2px;
+  -webkit-transition: .2s ease;
+  -moz-transition: .2s ease;
+  -o-transition: .2s ease;
+  -ms-transition: .2s ease;
+  transition: .2s ease;
+  opacity: 0.7;
+}
+
+.card .input-container .bar:before {
+  left: 50%;
+}
+
+.card .input-container .bar:after {
+  right: 50%;
+}
+
+.card .button-container {
+  text-align: center;
+}
+
+/* Button */
+.card .button-container button {
+  outline: 0;
+  cursor: pointer;
+  position: relative;
+  display: inline-block;
+  background: #2E538E;
+  width: 150px;
+  border: 1px solid #FFFFFF;
+  border-radius: 2px;
+  padding: 15px 0;
+  font-family: inherit;
+  font-size: 20px;
+  font-weight: 400;
+  line-height: 1;
+  overflow: hidden;
+  -webkit-transition: .5s ease;
+  -moz-transition: .5s ease;
+  -o-transition: .5s ease;
+  -ms-transition: .5s ease;
+  transition: .5s ease;
+  text-transform: uppercase;
+}
+
+.card .button-container button span {
+  position: relative;
+  z-index: 1;
+  color: #FFFFFF;
+  -webkit-transition: .7s ease;
+  -moz-transition: .7s ease;
+  -o-transition: .7s ease;
+  -ms-transition: .7s ease;
+  transition: .7s ease;
+}
+
+.card .button-container button:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  display: block;
+  background: #FFFFFF;
+  width: 30px;
+  height: 30px;
+  border-radius: 100%;
+  margin: -15px 0 0 -15px;
+  opacity: 0;
+  -webkit-transition: .4s ease;
+  -moz-transition: .4s ease;
+  -o-transition: .4s ease;
+  -ms-transition: .4s ease;
+  transition: .4s ease;
+}
+
+.card .button-container button:hover, .card .button-container button:active, .card .button-container button:focus {
+  border-color: #2E538E;
+  box-shadow: 0 0 15px #2E538E;
+}
+
+.card .button-container button:hover span, .card .button-container button:active span, .card .button-container button:focus span {
+  color: #FFFFFF;
+  text-shadow: #334858 0 0 3px;
+}
+
+.card .button-container button:active span, .card .button-container button:focus span {
+  color: #2E538E;
+}
+
+.card .button-container button:active:before, .card .button-container button:focus:before {
+  opacity: 1;
+  -webkit-transform: scale(10);
+  -moz-transform: scale(10);
+  -o-transform: scale(10);
+  -ms-transform: scale(10);
+  transform: scale(10);
+}
+
+/* Footer */
+.card .footer {
+  margin: 20px 0 0;
+  color: #9CA0A3;
+  font-size: 20px;
+  font-weight: 300;
+  text-align: center;
+}
+
+.card .footer a {
+  color: inherit;
+  text-decoration: none;
+  -webkit-transition: .6s ease;
+  -moz-transition: .6s ease;
+  -o-transition: .6s ease;
+  transition: .6s ease;
+}
+
+.card .footer a:hover {
+  color: #6C7276;
+  text-shadow: #334858 0 0 5px;
+}
+
+/* Checkbox */
+.card .checkbox {
+  margin: 0 50px 30px;
+}
+
+.card .checkbox label:after {
+    content: '';
+    display: table;
+    clear: both;
+}
+
+.card .checkbox .cr {
+    position: relative;
+    border: 1px solid #a9a9a9;
+    border-radius: .37em;
+    width: 1.4em;
+    height: 1.4em;
+    float: left;
+    margin-right: .5em;
+    margin-top: 5px;
+    color: #2E538E;
+    -webkit-transition: 5s ease;
+    -o-transition: 5s ease;
+    -moz-transition: 5s ease;
+    transition: .5s ease;
+}
+
+.card .checkbox label {
+  color: #9CA0A3;
+  font-size: 1.2em;
+  font-weight: 300;
+  margin-left: -20px;
+}
+
+.card .checkbox .cr:hover {
+  border-color: #7FA0D3;
+  box-shadow: 0 0 2px #2E538E;
+}
+
+.card .checkbox .cr .cr-icon {
+    position: absolute;
+    font-size: .9em;
+    line-height: 0;
+    top: 51%;
+    left: 15%;
+}
+
+.card .checkbox label input[type="checkbox"] {
+   opacity: 0;
+}
+
+.card .checkbox label input[type="checkbox"] + .cr > .cr-icon {
+    transform: scale(3) rotateZ(-20deg);
+    opacity: 0;
+    -webkit-transition: 3s ease;
+    -o-transition: 3s ease;
+    -moz-transition: 3s ease;
+    transition: .3s ease-in;
+}
+
+.card .checkbox label input[type="checkbox"]:checked + .cr > .cr-icon {
+    transform: scale(1) rotateZ(0deg);
+    opacity: 1;
+}
+
+.card .checkbox label input[type="checkbox"]:disabled + .cr {
+    opacity: .5;
+}
+
+p.reset-info {
+  color: #9d9d9d;
+  display: inline-block;
+  margin: 0 30px 30px 50px;
+  font-size: 18px;
+}
+
+.has-feedback .form-control-feedback {
+  color: #9d9d9d;
+  transition: .5s ease;
+  position: absolute;
+  top: 100px;
+}
+
+.card .input-container input:focus ~ .form-control-feedback {
+  color: #7FA0D3;
 }
