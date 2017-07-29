@@ -12,8 +12,6 @@ Merging dev into your branch
   4) git checkout <your branch>
   5) git merge dev
 
-
-
 Merging your branch into dev
   1) once your feature branch is working and you think its ready for dev
   2) before merging your code into dev you must have the most up to date version of dev
